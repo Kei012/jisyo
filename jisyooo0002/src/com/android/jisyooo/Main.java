@@ -10,11 +10,11 @@ import android.widget.Button;
 public class Main extends Activity {
     /** Called when the activity is first created. */
 	
-	//喜
+	//挨拶
 	private Button menu01;
-	//怒
+	//動詞
 	private Button menu02;
-	//哀
+	//感情
 	private Button menu03;
 	//楽
 //	private Button menu04;
@@ -39,7 +39,7 @@ public class Main extends Activity {
         finish.setOnClickListener(new finish_OnClick());
     }
     
-  //喜
+  //挨拶
     class ki_OnClick implements OnClickListener{
 		public void onClick(View v) {
 
@@ -53,7 +53,7 @@ public class Main extends Activity {
 		}
     }
     
-  //怒
+  //動詞
     class do_OnClick implements OnClickListener{
 		public void onClick(View v) {
 
@@ -67,7 +67,7 @@ public class Main extends Activity {
 		}
     }
     
-  //哀
+  //感情
     class ai_OnClick implements OnClickListener{
 		public void onClick(View v) {
 
