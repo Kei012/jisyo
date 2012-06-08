@@ -3,6 +3,7 @@ package com.android.jisyooo;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -60,8 +61,21 @@ public class A_gyou extends Activity{
         dialog.setTitle(item); //タイトル
         
         dialog.setMessage("意味：" );
-        dialog.show();
+       
+        
+        dialog.setCancelable(false)
+        .setPositiveButton("close", new DialogInterface.OnClickListener() {
+			
+			@Override
+			public void onClick(DialogInterface dialog, int id) {
+				// TODO 自動生成されたメソッド・スタブ
+				dialog.cancel(); //ダイアログを閉じる
+				
+			}
+		});
+//AlertDialog alert = dialog.create();
 
+	dialog.show();
         }
         });
        
