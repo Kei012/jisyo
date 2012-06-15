@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<color name="white">#ffffff</color>
+<color name="white">#FFFFFF</color>
 <color name="green">#009999</color>
+
+	<color name="basic_blue1">#395475</color>  
+    <color name="basic_blue2">#486d94</color>  
+    <color name="basic_blue3">#395475</color>  
+    <color name="basic_orange1">#99eca14f</color>  
+    <color name="basic_orange2">#66eca14f</color>  
+    <color name="basic_white1">#eeFFFFFF</color>  
+    <color name="basic_white2">#99ffffff</color>
 </resources>

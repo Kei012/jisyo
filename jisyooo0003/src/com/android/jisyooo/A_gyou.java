@@ -1,37 +1,37 @@
 package com.android.jisyooo;
 
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 
 
 public class A_gyou extends Activity{
 
+	//リストビュー
 	ListView lv = null;
+	//戻るボタン
+	private Button back;
 
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a_gyou);
         
-        
       //ListViewを取得
         this.lv = (ListView)this.findViewById(R.id.ki_list);
-        
         //項目の配列を準備
         String[] item = {"おはよがんす", "おばんでがんす", "ごめんくなんしぇ", "おやすみんしぇ" ,
 				  "もっし","お静かに","ご油断なく","ゆきちくれ"};
-         
        /* String[] imi = {"おはよう", "こんばんは", "ごめんください", "おやすみなさい" ,
   			  "ごめんください","さようなら","お気をつけてお帰りくださいませ","金よこせ"}; */
-        
         
         //項目のオブジェクトを準備
 //        ArrayAdapter ad = new ArrayAdapter(this, android.R.layout.simple_list_item_1, item);
@@ -58,10 +58,10 @@ public class A_gyou extends Activity{
         String item = (String)listView.getItemAtPosition(arg2);
  
         
-     // 選択されたデータをダイアログで表示
+     // 選択されたデータをダイアログで表示----------------------------------------------------------
         AlertDialog.Builder dialog = new AlertDialog.Builder(A_gyou.this);
-        dialog.setTitle(item); //タイトル
         
+        dialog.setTitle(item); //タイトル
         dialog.setMessage("意味：" );
        
         
@@ -79,7 +79,17 @@ public class A_gyou extends Activity{
 	dialog.show();
         }
         });
+        //ダイアログ処理ここまで------------------------------------------------------------------
+        
+        back = (Button)findViewById(R.id.back);
+        back.setOnClickListener(new backOnClick());
        
+	}
+	//戻るボタン処理
+	class backOnClick implements OnClickListener{
+		public void onClick(View v) {
+			finish();
+		}
 	}
 	
 }

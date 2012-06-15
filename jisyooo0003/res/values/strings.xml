@@ -6,10 +6,8 @@
     <string name="ki">挨拶</string>
     <string name="dow">動詞</string>
     <string name="ai">感情</string>
-  <!--   <string name="raku">楽</string> -->
     <string name="finish">終了</string>
     
-<!--     <string name="Text2">表示されたかな？？</string>
- -->
+ 	<string name="back">Go To Back</string>
     
 </resources>
