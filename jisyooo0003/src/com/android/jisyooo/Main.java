@@ -61,7 +61,7 @@ public class Main extends Activity {
 			Intent intent = new Intent();
             intent.setClassName(
                     "com.android.jisyooo",//←パッケージ名
-                    "com.android.jisyooo.K_gyou");
+                    "com.android.jisyooo.Verb");
             intent.setAction(Intent.ACTION_VIEW);
             startActivity(intent);
 		}
@@ -74,8 +74,8 @@ public class Main extends Activity {
             //次の画面に遷移させる
             Intent intent = new Intent();
             intent.setClassName(
-                    "jp.android.jisyooo",//←パッケージ名
-                    "jp.android.jisyooo.S_gyou");
+                    "com.android.jisyooo",//←パッケージ名
+                    "com.android.jisyooo.Emotion");
             intent.setAction(Intent.ACTION_VIEW);
             startActivity(intent);	
 		}
