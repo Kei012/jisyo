@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+	//押したときの設定
+	<item android:state_pressed="true">
+	<shape android:shape="rectangle">
+	<corners android:radius="5px" />
+	
+	//グラデーションの指定（gradient）
+	<gradient
+	android:angle="90"
+	android:endColor="#CBF1A2"
+	android:startColor="#9EE33B" />
+	
+	//ボタンのパディング
+	<padding
+	android:top="10px"
+	android:bottom="10px"
+	android:left="10px"
+	android:right="10px" />
+	
+	//ボタンの線
+	<stroke
+	android:width="1px"
+	android:color="#80D580" />
+	</shape>
+	</item>
+	
+	//クリックしたときの設定
+	<item android:state_focused="true">
+	<shape android:shape ="rectangle">
+	<corners android:radius="5dip" />
+	
+	<gradient
+	android:angle="90"
+	android:endColor="#CBF1A2"
+	android:startColor="#9EE33B" />
+	
+	<padding
+	android:top="10px"
+	android:bottom="10px"
+	android:left="10px"
+	android:right="10px" />
+	
+	<stroke
+	android:width="1px"
+	android:color="#80D580" />
+	</shape>
+	</item>
+	
+	<item>
+	//何も条件がない通常の設定
+	<shape android:shape ="rectangle">
+	<corners android:radius="5px" />
+	
+	<gradient
+	android:angle="90"
+	android:endColor="#A9E665"
+	android:startColor="#80BF2B" />
+	
+	<padding
+	android:top="10px"
+	android:bottom="10px"
+	android:left="10px"
+	android:right="10px" />
+	
+	<stroke
+	android:width="1px"
+	android:color="#339933" />
+	</shape>
+	</item>
+
+	//ボタンの角を丸く
+	<corners
+    android:bottomRightRadius="80px"
+    android:bottomLeftRadius="80px"
+    android:topLeftRadius="80px"
+    android:topRightRadius="80px"
+ />
+ 
+</selector>
